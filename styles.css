@@ -4,13 +4,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #FAFAFA;
 }
-
+.area-pagina{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.area-conteudo{
+  display: flex;
+  width: 935px;
+  justify-content: center;
+  position: relative;
+}
 .pagina {
   background-color: #FAFAFA;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
   width: 100%;
 }
 .area-topo {
@@ -67,7 +76,8 @@ body {
   width: 293px;
   height: 500px;
   margin-top: 88px;
-  margin-left: 28px;
+  position: fixed;
+  margin-left: 630px;
 }
 .caixa-user{
   display: flex;
@@ -324,6 +334,9 @@ button,.sugestao-info, .story, ion-icon:hover {
 @media (max-width: 935px){
   .sidebar {
     display: none;
+  }
+  .pagina{
+    justify-content: center;
   }
 }
 @media (max-width: 614px){
